@@ -2,13 +2,16 @@
   "name": "xstate-with-context-api",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dev-fisher.github.io/react-global-context-xstate",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -26,6 +29,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }
